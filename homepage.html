@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <style>
+    /* Basic Layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, .sidebar, .content {
+      padding: 20px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+    .sidebar {
+      float: left;
+      width: 20%;
+      background-color: #f1f1f1;
+    }
+    .content {
+      float: left;
+      width: 80%;
+      padding: 20px;
+    }
+    /* UI Elements */
+    .welcome {
+      font-size: 1.5em;
+    }
+    .date-time {
+      text-align: right;
+    }
+    .carousel, .recommend, .notifications, .account-summary {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>User Dashboard</div>
+</header>
+
+<div class="sidebar">
+  <!-- Sidebar content -->
+  <div>Quick Links</div>
+</div>
+
+<div class="content">
+  <!-- Main content -->
+  <div class="date-time" id="dateTime"></div>
+  <div class="welcome">Welcome, User!</div>
+  
+  <!-- Interactive Recent Purchases Carousel -->
+  <div class="carousel">
+    Recent Purchases
+    <!-- Carousel content -->
+  </div>
+  
+  <!-- AI-Driven Recommended Products -->
+  <div class="recommend">
+    Recommended Products
+    <!-- Recommended products grid -->
+  </div>
+  
+  <!-- Real-Time Notifications -->
+  <div class="notifications">
+    Notifications
+    <!-- Notifications feed -->
+  </div>
+  
+  <!-- Account Summary and Quick Stats -->
+  <div class="account-summary">
+    Account Summary
+    <!-- Account summary content -->
+  </div>
+</div>
+
+<!-- JavaScript to update date and time -->
+<script>
+  function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString();
+    document.getElementById('dateTime').innerText = dateTimeString;
+  }
+  // Update every second
+  setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
