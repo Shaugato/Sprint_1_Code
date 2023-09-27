@@ -6,7 +6,7 @@ if (isset($_GET['use_remote_db']) && $_GET['use_remote_db'] == 'true') {
 }
 $username = "root";
 $password = "";
-$dbname = "user_databse";
+$dbname = "user_database";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
