@@ -54,15 +54,16 @@ $conn->close();
 <body>
 
 <div class="container">
-        <h1>Login</h1>
+        <div class="login-header">
+            <img src="assets/images/login-logo.svg">
+            <h1>Goto Grocery</h1>
+        </div>
         <form id="loginForm" method="POST" action="">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" placeholder="username" required>
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
             </div>
             <button type="submit">Login</button>
         </form>
