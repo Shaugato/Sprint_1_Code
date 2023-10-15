@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory Management</title>
-    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="styles/inventory.css">
 </head>
 <body>
     <header>
@@ -21,8 +21,8 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT i.InventoryID, i.ProductID, p.Name, i.StockLevel, i.ReorderLevel 
-                FROM inventory i 
+        $sql = "SELECT i.InventoryID, i.ProductID, p.Name, i.StockLevel, i.ReorderLevel
+                FROM inventory i
                 JOIN product p ON i.ProductID = p.ProductID";
         $result = $conn->query($sql);
 
