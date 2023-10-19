@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $userRole = $row['role'];
 
         if ($userRole === 'management') {
-            header("Location: management_dashboard.html");
+            header("Location: dashboard.html");
         } else {
             header("Location: homepage.html");
         }
@@ -72,8 +72,3 @@ $conn->close();
 
 </body>
 </html>
-
-
-
-
-<!-- Need to look into style sheets -->

@@ -37,6 +37,7 @@ $result = $conn->query($sql);
 <html>
 <head>
     <title>Order History</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,6 +77,27 @@ $result = $conn->query($sql);
     </style>
 </head>
 <body>
+
+    <script>
+        function redirectToDashboard() {
+          window.location.href = "dashboard.html"; // Replace with the actual URL of your dashboard page
+        }
+    </script>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button onclick="redirectToDashboard()" class="dropbtn">Dashboard</button>
+          <div class="dropdown-content">
+            <a href="inventory.php">Inventory</a>
+            <a href="reports.php">Reports</a>
+            <a href="sales_record.php">Sales</a>
+            <a href="orderhistory.php">Order History</a>
+            <a href="purchase.php">Purchase</a>
+            <a href="products.php">Products</a>
+          </div>
+        </div> 
+        <a href="logout.php" id="logout">Logout</a>
+      </div>
 
 <h1>Order History</h1>
 
