@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Commit the transaction
         $conn->commit();
-        echo "New purchase record created successfully, and inventory updated.";
+        echo "<script>alert('New purchase record created successfully, and inventory updated.')</script>";
     } catch (Exception $e) {
         // An error occurred; rollback the transaction
         $conn->rollback();
