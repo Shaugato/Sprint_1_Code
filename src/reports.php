@@ -30,6 +30,7 @@
     <a href="logout.php" id="logout">Logout</a>
   </div>
 
+  <h1>Reports</h1>
 
   <form action="reports.php" method="post">
     <label for="start_date">Start Date:</label>
@@ -38,10 +39,9 @@
     <label for="end_date">End Date:</label>
     <input type="date" id="end_date" name="end_date" required>
 
-    <button type="submit">Search</button>
+    <button class="buttonContent" type="submit">Search</button>
   </form>
 
-  <button onclick="downloadCSV()">Download CSV</button>
 
 
   <?php
@@ -79,10 +79,14 @@
         $result = $conn->query($sql);
 
         if ($result) {
+            echo "<h2>Search Results</h2>";
+
+            echo "<div class='container'>
+                    <button class='buttonContent' onclick='downloadCSV()'>Download CSV</button>
+                 </div>";
             
 
             // Display the results
-            echo "<h2>Search Results</h2>";
             echo "<table id='purchaseTable'>
                     <tr>
                         <th>PurchaseID</th>
@@ -104,6 +108,8 @@
 
             echo "</table>";
 
+
+
             // handling for  JSON -> CSV
             $result = $conn->query($sql);
 
@@ -119,7 +125,7 @@
         }
     } else {
         // Handle the case where the form wasn't submitted via POST
-        echo "Form not submitted.";
+        echo "<p>No File to Download</p>";
     }
 
     // Close the database connection

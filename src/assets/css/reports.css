@@ -1,0 +1,86 @@
+/* Reset some default styles for better consistency */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and some basic styling to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Center the main content */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+
+.buttonContent {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonContent:hover {
+    background-color: #45a049;
+}
+
+/* Style the table */
+#purchaseTable {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#purchaseTable th, #purchaseTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#purchaseTable th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Style the download CSV button */
+.container {
+    text-align: center;
+}
+
+.buttonContent#downloadCSV {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buttonContent#downloadCSV:hover {
+    background-color: #0077A3;
+}
