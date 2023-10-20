@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #cf2c2c;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: calc(25% - 20px);  /* Smaller card size */
+  font-size: 18px;  /* Bigger text size */
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.price {
+  color: #e44d26;
+  font-weight: bold;
+}
+
+.purchase-button {
+  background-color: #FF0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  margin-right: 20px;
+
+
+}
+
+.purchase-button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Additional styles for hover effect */
+.product-card:hover {
+  background-color: #ce8c70;
+}

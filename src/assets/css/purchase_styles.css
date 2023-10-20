@@ -1,0 +1,145 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, button, select {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove default margin from the body */
+  body {
+    margin: 0;
+  }
+
+  /* Apply a background color to the page */
+  body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Style the header */
+header {
+	background-color: #cf2c2c;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+  /* Style the footer */
+  footer {
+    background-color: #cf2c2c;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Style the main content area */
+  main {
+    padding: 20px;
+  }
+
+  /* Style individual product cards */
+  .purchase-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+  }
+
+  .purchase-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .purchase-card h3 {
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+
+  .purchase-card p {
+    margin-bottom: 10px;
+    padding: 20px;
+
+  }
+
+  .price {
+    color: #a73030;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  /* Style the quantity input field */
+  .quantity {
+    width: 200px;
+    padding: 20px;
+  }
+
+  /* Style the total amount display */
+  #total-amount {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #FF0000;
+  }
+  /* Style for the Back to Shop button at the top-right corner */
+#back-to-shop-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4e4174bb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  z-index: 100;  /* To make sure it appears above other elements */
+}
+button[name="buy"] {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button[name="buy"]:hover {
+    background-color: darkred;
+  }
+
+
+/* Hover effect for the Back to Shop button */
+#back-to-shop-button:hover {
+  background-color: #1518b9;
+}
+
+  /* Hover effects for better interactivity */
+  .purchase-card:hover {
+    border-color: #FF0000;
+  }
+
+
+  #go-to-order-history-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#go-to-order-history-button:hover {
+    background-color: #c0392b;
+}
